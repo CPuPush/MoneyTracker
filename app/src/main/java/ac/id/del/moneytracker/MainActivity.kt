@@ -13,12 +13,17 @@ class MainActivity : AppCompatActivity() {
         // untuk menyembunyikan header
         supportActionBar?.hide()
 
-        btnToLogin()
-    }
+        val currentFragment =
+            supportFragmentManager.findFragmentById(R.id.fragment_container)
 
-    private fun btnToLogin() {
-        btn_signIn.setOnClickListener {
+        if (currentFragment == null) {
             startActivity(Intent(this, SignInActivity::class.java))
         }
     }
+
+//    private fun btnToLogin() {
+//        btn_signIn.setOnClickListener {
+//            startActivity(Intent(this, SignInActivity::class.java))
+//        }
+//    }
 }
