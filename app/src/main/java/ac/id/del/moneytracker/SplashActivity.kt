@@ -13,6 +13,8 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+        supportActionBar?.hide()
+
         // kode untuk menjalankan main screen setelah time splash screen habis
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))

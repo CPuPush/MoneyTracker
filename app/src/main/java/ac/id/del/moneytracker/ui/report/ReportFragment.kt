@@ -9,20 +9,27 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import ac.id.del.moneytracker.databinding.FragmentReportBinding
+import android.graphics.Color
 import android.widget.EditText
 import com.anychart.AnyChart
 import com.anychart.AnyChartView
 import com.anychart.chart.common.dataentry.DataEntry
 import com.anychart.chart.common.dataentry.ValueDataEntry
 import com.anychart.charts.Pie
+import com.github.mikephil.charting.animation.Easing
+import com.github.mikephil.charting.components.Legend
+import com.github.mikephil.charting.data.Entry
+import com.github.mikephil.charting.data.PieData
+import com.github.mikephil.charting.data.PieDataSet
+import com.github.mikephil.charting.data.PieEntry
+import com.github.mikephil.charting.formatter.PercentFormatter
+import kotlinx.android.synthetic.main.fragment_report.*
 import java.util.*
 
 class ReportFragment : Fragment() {
 
     private var chart: AnyChartView? = null
 
-    private val salary = listOf(200,300,400,600)
-    private val month = listOf("January","February","March","April")
 
     private var _binding: FragmentReportBinding? = null
 
@@ -45,30 +52,12 @@ class ReportFragment : Fragment() {
 //        notificationsViewModel.text.observe(viewLifecycleOwner) {
 //            textView.text = it
 //        }
+
+       // pieChart = findViewById(R.id.pieChart)
         return inflater.inflate(R.layout.fragment_report,container, false)
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        chart = view?.findViewById(R.id.pieChart)
-        configChartView()
-    }
 
-
-    private fun configChartView() {
-        val pie : Pie = AnyChart.pie()
-
-        val dataPieChart: MutableList<DataEntry> = mutableListOf()
-
-        for (index in salary.indices){
-            dataPieChart.add(ValueDataEntry(month.elementAt(index),salary.elementAt(index)))
-        }
-
-        pie.data(dataPieChart)
-        pie.title("Salaries Overview")
-        chart!!.setChart(pie)
-
-    }
 
     override fun onDestroyView() {
         super.onDestroyView()
