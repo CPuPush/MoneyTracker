@@ -46,7 +46,7 @@ class AddFragment : Fragment() {
 //            textView.text = it
 //        }
         val view = inflater.inflate(R.layout.fragment_add, container, false)
-        dateButton = view.findViewById(R.id.btn_add_calendar) as Button
+//        dateButton = view.findViewById(R.id.btn_add_calendar) as Button
 
         return view
     }

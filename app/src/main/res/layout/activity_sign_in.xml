@@ -64,16 +64,19 @@
                 android:fontFamily="@font/ralewaymedium"
                 android:layout_marginTop="15dp"
                 android:paddingLeft="10dp"
-                android:drawableEnd="@drawable/ic_eye"
+                android:drawableEnd="@drawable/ic_eye_open"
                 android:inputType="textPassword"
                 android:id="@+id/et_password"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign in"
+                android:text="Sign In"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="@color/prim"
+                android:textAllCaps="false"
+                android:fontFamily="@font/ralewaymedium"
+                android:textSize="15dp"
                 android:id="@+id/btn_nav"
                 />
 
