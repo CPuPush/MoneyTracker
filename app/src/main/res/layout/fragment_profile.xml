@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:text="*************"
                 android:fontFamily="@font/ralewaymedium"
-                android:textSize="15dp"
+                android:textSize="20dp"
                 android:textColor="@color/black"
                 android:drawableEnd="@drawable/ic_eye"
                 android:padding="15dp"
@@ -72,7 +72,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Log Out"
+                android:text="Sign Out"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="@color/red"
                 android:id="@+id/btn_logout"
