@@ -10,20 +10,6 @@
         android:layout_height="match_parent"
         android:id="@+id/cd_white"
         android:padding="30dp">
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:id="@+id/edit_profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_gravity="right"
-                android:src="@drawable/ic_edit" >
-            </ImageView>
-        </LinearLayout>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,7 +30,7 @@
                 android:id="@+id/id_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Patricia Sibarani"
+                android:text="eldul"
                 android:textSize="15dp"
                 android:fontFamily="@font/ralewaymedium"
                 android:textColor="@color/black"
@@ -55,12 +41,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Username" />
+                android:text="Email" />
             <TextView
                 android:id="@+id/id_Username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CIA"
+                android:text="eldul@gmail.com"
                 android:textSize="15dp"
                 android:fontFamily="@font/ralewaymedium"
                 android:textColor="@color/black"
@@ -75,26 +61,11 @@
                 android:id="@+id/id_Password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:text="*************"
                 android:fontFamily="@font/ralewaymedium"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:drawableEnd="@drawable/ic_eye"
-                android:padding="15dp"
-                android:background="@drawable/shape" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Birth date" />
-            <TextView
-                android:id="@+id/id_birthdate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="24/22/2021"
-                android:textSize="15dp"
-                android:textColor="@color/black"
                 android:padding="15dp"
                 android:background="@drawable/shape" />
 
