@@ -21,6 +21,7 @@
             android:textColor="@color/black"
             android:textSize="20dp"
             android:padding="0dp"
+            android:layout_marginLeft="5dp"
             android:id="@+id/tv_fragment_add_title"/>
 
     </LinearLayout>
@@ -66,6 +67,7 @@
                     android:digits="0123456789"
                     android:inputType="phone"
                     android:maxLength="10"
+                    android:background="@drawable/spinner_border"
                     android:id="@+id/et_fragment_add_amount"/>
 
             </LinearLayout>
@@ -87,7 +89,11 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/spinner_fragment_add_category"
                     android:entries="@array/category"
-                    android:padding="15dp"
+                    android:background="@drawable/spinner_border"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
                     android:autofillHints="Category"
                     android:scrollbarStyle="insideInset">
                 </Spinner>
@@ -114,6 +120,7 @@
                     android:fontFamily="@font/ralewaymedium"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
+                    android:background="@drawable/spinner_border"
                     android:hint="@string/pick_date"/>
 
             </LinearLayout>
@@ -138,7 +145,8 @@
                     android:hint="Notes"
                     android:textSize="15dp"
                     android:fontFamily="@font/ralewaymedium"
-                    android:textColorHint="@color/black"/>
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/spinner_border"/>
 
             </LinearLayout>
 
