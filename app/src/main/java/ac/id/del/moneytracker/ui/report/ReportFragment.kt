@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.size
 import androidx.fragment.app.Fragment
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.components.Legend
@@ -64,10 +65,12 @@ class ReportFragment : Fragment() {
         colors.add(Color.parseColor("#EF5DA8"))
         colors.add(Color.parseColor("#5D5FEF"))
         colors.add(Color.parseColor("#2A9D8F"))
-        colors.add(Color.parseColor("#890567"))
-        colors.add(Color.parseColor("#a35567"))
-        colors.add(Color.parseColor("#ff5f67"))
-        colors.add(Color.parseColor("#3ca567"))
+        colors.add(Color.parseColor("#60CEE7"))
+        colors.add(Color.parseColor("#EC33CE"))
+        colors.add(Color.parseColor("#F46A61"))
+        colors.add(Color.parseColor("#F4A261"))
+        colors.add(Color.parseColor("#D7C255"))
+        colors.add(Color.parseColor("#1C1B1E"))
 
         //input data and fit data into pie chart entry
         for (type in typeAmountMap.keys) {
@@ -81,7 +84,7 @@ class ReportFragment : Fragment() {
         //providing color list for coloring different entries
         pieDataSet.colors = colors
         //to set text color
-        pieDataSet.setValueTextColor(Color.WHITE);
+        pieDataSet.setValueTextColor(Color.WHITE)
         //to change the value to percentage
         pieDataSet.setValueFormatter(PercentFormatter())
         //grouping the data set from entry to chart
@@ -90,6 +93,7 @@ class ReportFragment : Fragment() {
         pieData.setDrawValues(true)
         //to remove the "Description Label" in the right-left corner
         pieChart.getDescription().setEnabled(false);
+        pieChart.setDrawHoleEnabled(false);
 
         //pieChart.setHoleRadius(0f);
         //legend attributes
@@ -97,11 +101,12 @@ class ReportFragment : Fragment() {
 
         val legend = pieChart.legend
         legend.form = Legend.LegendForm.SQUARE
-        legend.textSize = 12f
+        legend.textSize = 15f
         legend.formSize = 20f
-        legend.formToTextSpace = 2f
-        //legend.horizontalAlignment = Legend.LegendHorizontalAlignment.CENTER
-        //legend.orientation = Legend.LegendOrientation.VERTICAL
+        legend.formToTextSpace = 10f
+        legend.horizontalAlignment = Legend.LegendHorizontalAlignment.LEFT
+        legend.verticalAlignment = Legend.LegendVerticalAlignment.BOTTOM
+        legend.orientation = Legend.LegendOrientation.VERTICAL
 
         pieChart.setData(pieData)
         pieChart.invalidate()
