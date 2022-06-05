@@ -1,10 +1,9 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24"
-    android:tint="?attr/colorControlNormal">
-  <path
-      android:fillColor="@android:color/white"
-      android:pathData="M6,19c0,1.1 0.9,2 2,2h8c1.1,0 2,-0.9 2,-2V7H6v12zM19,4h-3.5l-1,-1h-5l-1,1H5v2h14V4z"/>
+<vector android:autoMirrored="true" android:height="24dp"
+    android:viewportHeight="24" android:viewportWidth="24"
+    android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#1C1B1E" android:fillType="evenOdd" android:pathData="M3.75,5C3.75,4.5858 4.0858,4.25 4.5,4.25H19.5C19.9142,4.25 20.25,4.5858 20.25,5V22C20.25,22.4142 19.9142,22.75 19.5,22.75H4.5C4.0858,22.75 3.75,22.4142 3.75,22V5ZM5.25,5.75V21.25H18.75V5.75H5.25Z"/>
+    <path android:fillColor="#1C1B1E" android:fillType="evenOdd" android:pathData="M10,9.25C10.4142,9.25 10.75,9.5858 10.75,10V16.5C10.75,16.9142 10.4142,17.25 10,17.25C9.5858,17.25 9.25,16.9142 9.25,16.5V10C9.25,9.5858 9.5858,9.25 10,9.25Z"/>
+    <path android:fillColor="#1C1B1E" android:fillType="evenOdd" android:pathData="M14,9.25C14.4142,9.25 14.75,9.5858 14.75,10V16.5C14.75,16.9142 14.4142,17.25 14,17.25C13.5858,17.25 13.25,16.9142 13.25,16.5V10C13.25,9.5858 13.5858,9.25 14,9.25Z"/>
+    <path android:fillColor="#1C1B1E" android:fillType="evenOdd" android:pathData="M1.25,5C1.25,4.5858 1.5858,4.25 2,4.25H22C22.4142,4.25 22.75,4.5858 22.75,5C22.75,5.4142 22.4142,5.75 22,5.75H2C1.5858,5.75 1.25,5.4142 1.25,5Z"/>
+    <path android:fillColor="#1C1B1E" android:fillType="evenOdd" android:pathData="M8.9868,1.6395C9.1185,1.3993 9.3706,1.25 9.6445,1.25H14.3885C14.6647,1.25 14.9186,1.4018 15.0493,1.6451L16.6607,4.6451C16.7856,4.8775 16.7791,5.1585 16.6437,5.3849C16.5083,5.6114 16.2638,5.75 16,5.75H8C7.735,5.75 7.4897,5.6102 7.3547,5.3822C7.2196,5.1542 7.215,4.8719 7.3423,4.6395L8.9868,1.6395ZM10.0887,2.75L9.2664,4.25H14.7458L13.9401,2.75H10.0887Z"/>
 </vector>
