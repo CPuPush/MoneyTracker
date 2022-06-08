@@ -5,15 +5,82 @@
     android:layout_height="match_parent"
     tools:context=".ui.profile.ProfileFragment">
 
-
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/cd_white"
+        android:padding="30dp">
+        <ImageView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="HELLO SEMUA"/>
+            android:layout_marginTop="50dp"
+            android:src="@drawable/profile"/>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+            <TextView
+                android:id="@+id/id_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="eldul"
+                android:textSize="15dp"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email" />
+            <TextView
+                android:id="@+id/id_Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="eldul@gmail.com"
+                android:textSize="15dp"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:background="@drawable/shape" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Password" />
+            <TextView
+                android:id="@+id/id_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*************"
+                android:fontFamily="@font/ralewaymedium"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_eye"
+                android:padding="15dp"
+                android:background="@drawable/shape" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/red"
+                android:id="@+id/btn_logout"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>
