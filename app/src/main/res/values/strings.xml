@@ -5,7 +5,7 @@
     <string name="title_add">Add</string>
     <string name="title_report">Report</string>
     <string name="title_profile">Profile</string>
-    <string name="pick_date">dd/mm/yy</string>
+    <string name="pick_date">yyyy/mm/dd</string>
 
     <string-array name="category">
         <item>Food and Beverage</item>
@@ -19,6 +19,7 @@
         <item>Other Expense</item>
         <item>Income</item>
     </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
