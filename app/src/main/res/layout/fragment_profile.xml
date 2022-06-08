@@ -65,7 +65,7 @@
                 android:fontFamily="@font/ralewaymedium"
                 android:textSize="20dp"
                 android:textColor="@color/black"
-                android:drawableEnd="@drawable/ic_eye"
+                android:drawableEnd="@drawable/ic_eye_close"
                 android:padding="15dp"
                 android:background="@drawable/shape" />
 
